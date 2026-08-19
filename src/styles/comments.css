@@ -1,18 +1,27 @@
 .Comentarios
 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.819);;
+    color: var(--yt-text-primary);
+    background-color: var(--yt-bg-primary);
     width: 100%;
-    padding: 10px;
+    padding: 12px 0;
 }
+
+.Comentarios h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
 .meuComentario 
 {
-    padding: 10px;
-    padding-left: 0;
+    padding: 0;
+    padding-bottom: 16px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
+    gap: 12px;
 }
+
 .img
 {
     border-radius: 50%;
@@ -20,119 +29,186 @@
     background-size: cover;
     width: 40px;
     height: 40px;
-    margin-right: 10px;
-    
+    flex-shrink: 0;
 }
+
 hr {
-    opacity: 0.5;
-    margin-top: 2px;
-    margin-bottom: 5px;
-}
-.extras {
-    flex-grow: 2;
-}
-.bot
-{
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-    font-size: 1rem;
     border: none;
+    border-bottom: 1px solid var(--yt-divider);
+    opacity: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.extras {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.extras > p {
+    font-size: 0.875rem;
+    color: var(--yt-text-secondary);
     cursor: pointer;
 }
+
+.bot
+{
+    height: 32px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-family: 'Pixelify Sans';
+    border: none;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
 .cancelar {
     background: none;
-    color: white;
+    color: var(--yt-text-primary);
 }
+
 .cancelar:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--yt-button-hover);
 }
+
 .comentar {
-    background-color: rgb(88, 208, 255);
+    background-color: var(--yt-button-bg);
+    color: var(--yt-text-secondary);
+    cursor: not-allowed;
 }
+
 .comentar:hover {
-    background-color: rgb(32, 167, 220);
+    background-color: var(--yt-button-hover);
 }
+
 .bots {
     width: 100%;
     display: flex;
-    gap: 10px;
-    justify-content: end;
+    gap: 8px;
+    justify-content: flex-end;
 }
+
 #meuinput 
 {
     width: 100%;
     border-radius: 0;
-    height: 20px;
+    height: auto;
     background: none;
-    padding-left: 0px;
+    padding: 8px 0 0 0;
     border: none;
+    border-bottom: 1px solid var(--yt-divider);
+    color: var(--yt-text-primary);
+    font-size: 0.875rem;
+    font-family: 'Pixelify Sans';
 }
+
 #meuinput:focus{
-    padding-left: 0px;
+    outline: none;
+    border-bottom: 2px solid var(--yt-text-primary);
+    padding-left: 0;
+}
+
+#meuinput::placeholder {
+    color: var(--yt-text-secondary);
 }
 
 /*COMENTARIOS COMUNS*/
 .imagemcom {
-    
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
-
+    background-size: cover;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
 }
+
 .comentario-completo{
     display: flex;
-    gap: 10px;
-    font-size: 1.2rem;
+    gap: 12px;
+    font-size: 0.875rem;
+    padding: 8px 0;
 }
-.tempo{
-    font-size: 0.9rem;
-    opacity: 0.7;
-}
-.comentario-texto {
-    font-size: 1rem;
-    text-align: justify;
-   
-}
-.infocom {
-    width: 95%;
-}
-.respostas {
-    color: rgb(0, 128, 255);
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.linkdislike {
-    font-size: 1rem;
-    background: none;
-    color: white;
-    border: none;
-    margin-right: 10px;
-}
-.numspam{
-    opacity: 0.7;
-}
-#dislike {
-    font-size: 1.3rem;
 
+.tempo{
+    font-size: 0.75rem;
+    color: var(--yt-text-secondary);
+}
+
+.comentario-texto {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--yt-text-primary);
+}
+
+.infocom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.infocom > p:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.respostas {
+    color: var(--yt-text-primary);
+    background: none;
+    border: none;
+    font-size: 0.75rem;
+    font-family: 'Pixelify Sans';
+    font-weight: 500;
+    cursor: pointer;
+    padding: 2px 2px;
+   
+    margin-top: 4px;
+    text-align: left;
+}
+
+.respostas:hover {
+    background-color: var(--yt-button-hover);
+    text-align: left;
+}
+
+.linkdislike {
+    font-size: 0.75rem;
+    background: none;
+    color: var(--yt-text-secondary);
+    border: none;
+    margin-right: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Pixelify Sans';
+}
+
+.linkdislike:hover {
+    background-color: var(--yt-button-hover);
+}
+
+.numspam{
+    font-size: 0.75rem;
+}
+
+#dislike {
+    font-size: 0.75rem;
+    margin-right: 4px;
 }
 
 footer {
-
-    color: white;
-    display: flex;
-  
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-    padding: 10px;
-    background-color: #111;
+    display: none;
 }
+
 footer span {
-    color: rgb(193, 0, 0);
+    color: var(--yt-accent);
     margin-left: 2px;
 }

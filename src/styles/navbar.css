@@ -5,30 +5,27 @@
 
 nav 
 {
-    background-color: #111;
-    position: relative;
-
+    background-color: var(--yt-bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 200;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    position: fixed;
-    z-index: 50;
-
-    
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 56px;
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .inputsymbolaudio, .channel {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
+
 .button-operation
 {
     border-radius: 50%;
@@ -36,92 +33,147 @@ nav
     height: 40px;
     cursor: pointer;
     border: none;
+    background: transparent;
+    color: var(--yt-text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s;
 }
+
+.button-operation:hover {
+    background-color: var(--yt-button-hover);
+}
+
 input
 {
-    width: 500px;
+    width: 400px;
     height: 40px;
-    border-radius: 30px;
-    background-color: #222;
-    border: 1px solid #333;
-    padding-left: 10px;
-    color: white;
+    border-radius: 20px;
+    background-color: #121212;
+    border: 1px solid var(--yt-divider);
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--yt-text-primary);
     font-size: 1rem;
-    transition: 0.2s;
+    font-family: 'Pixelify Sans';
+    transition: border-color 0.15s, box-shadow 0.15s;
 }
+
 input:focus {
     outline: none;
-    border-color: rgb(0, 140, 255);
-    padding-left: 50px;
-    transition: 0.2s;
+    border-color: var(--yt-blue);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    padding-left: 16px;
 }
+
+input::placeholder {
+    color: var(--yt-text-secondary);
+}
+
 #audio
 {
-    background-color: #333;
-    background-image: url('https://www.shutterstock.com/image-vector/microphone-8bit-icon-game-element-260nw-2545866793.jpg');
-    background-size: cover;
+    background-color: transparent;
+    background-image: url('https://img.icons8.com/?size=100&id=jkqQE2I90I8R&format=png&color=000000');
+    background-size: 27.5px 27.5px;
+    background-repeat: no-repeat;
+    background-position: center center;
     filter: invert(1);
-    outline: 1px solid transparent;
-    transition: 0.1s;
 }
+
 #audio:hover
 {
-    outline-color: rgb(252, 147, 90);
-    transition: 0.1s;
+    background-color: var(--yt-button-hover);
+    filter: invert(1);
 }
+
 .channel .button-operation {
    display: flex;
    justify-content: space-around;
    align-items: center;
    font-size: 1rem;
 }
+
 .create {
-    width: 70px;
-    border-radius: 30px;
-    background-color: #222;
-    color: white;
+    width: auto;
+    border-radius: 20px;
+    background-color: var(--yt-button-bg);
+    color: var(--yt-text-primary);
+    padding: 0 12px;
+    gap: 6px;
+    font-family: 'Pixelify Sans';
+    font-size: 0.9rem;
+    cursor: pointer;
 }
+
+.create:hover {
+    background-color: var(--yt-button-hover);
+}
+
 #plus
 {
     font-size: 1.5rem;
+    line-height: 1;
 }
+
 #not
 {
-    background-image: url('https://www.shutterstock.com/image-vector/pixelated-bell-icon-8bit-style-260nw-2590537267.jpg');
-    background-position: 54px -12px;
-    background-size: 100px 70px;
+    background-image: url('https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=000000');
+    background-size: 27.5px 27.5px;
+    background-repeat: no-repeat;
+    background-position: center center;
     filter: invert(1);
 }
+
+#not:hover {
+    background-color: var(--yt-button-hover);
+}
+
 #ca 
 {
     background-image: url('https://yt3.googleusercontent.com/9muLpK7ohUv15em90KzpChttZD7bv7bYnRx63Cddp3uULf_Z0lUyJpT5y8v1jdQ9vkeexaDiCw=s160-c-k-c0x00ffffff-no-rj');
     background-size: cover;
 }
+
+#ca:hover {
+    outline: 2px solid var(--yt-text-secondary);
+}
+
 #logo
 {
     background-image: url('https://art.ngfiles.com/images/1647000/1647057_xlerr12_youtube-logo-pixel-art.png?f1613509382');
     background-size: cover;
     background-color: transparent;
 }
+
 .logotype
 {
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--yt-text-primary);
     align-items: center;
     font-size: 1.5rem;
+    gap: 4px;
 }
+
+.name
+{
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
 .name span
 {
     opacity: 0.5;
-    position: absolute;
     font-size: 1rem;
 }
+
 #stripes
 {
     background: none;
-    color: white;
-    font-size: 2rem;
+    color: var(--yt-text-primary);
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -19,7 +19,7 @@ function Comentarios ()
         </div>
 
         <ComentarioComum 
-            imagemurl={"https://pm1.aminoapps.com/8015/8624c1ebab74c3555324e8e32525ada33aa99247r1-736-736v2_uhq.jpg"} 
+            imagemurl={"https://i.redd.it/kim-pines-from-scott-pilgrim-takes-off-straight-up-looks-v0-jifn7g5hrylc1.jpg?width=735&format=pjpg&auto=webp&s=8a8e10fb35970cc529a473ec559d1213192b101f"} 
             nomeusuario={"ShadowVortex"} 
             tempoemmeses={"3"} 
             comentario={"DISTURBING THE BEES\nTHEY GOT IN MY EYES"} 

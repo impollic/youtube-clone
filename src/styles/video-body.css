@@ -1,200 +1,267 @@
 .main-section{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
-    /*PADDINGS
-    padding-left: 25px;
-    padding-right: 25px;
-    */
+    padding-top: 56px;
+    background-color: var(--yt-bg-primary);
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+}
 
-    padding-top: 70px;
-    background-color: #121212;;
-}   
 .Coments
 {
-    background-color: #121212;
-    width: 30%;
+    background-color: var(--yt-bg-primary);
+    width: 35%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 10px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 24px;
+    align-items: flex-start;
 }
 
 .Video-Recomendado 
 {
-    width: 90%;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
     display: flex;
-    
+    gap: 8px;
     position: relative;
     cursor: pointer;
-    transition: 0.2s;
-    padding: 2px;
-    padding-right: 10px;
+    padding: 0;
 }
+
 .Video-Recomendado:hover 
 {
-    background-color: rgb(35, 35, 35);
-    transition: 0.2s;
+    opacity: 0.85;
 }
 
 .image-holder{
     position: relative;
-    width: 60%;
-    border-bottom: 5px solid rgb(222, 14, 14);
-}
-.info-holder{
     width: 40%;
-    color: white;
-    padding: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+}
+
+.info-holder{
+    width: 60%;
+    color: var(--yt-text-primary);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .videocomp-img{
     width: 100%;
     height: 100%;
-   
+    object-fit: cover;
 }
+
 .image-holder p
 {
     position: absolute;
-    right: 10px;
-    bottom: 5px;
+    right: 6px;
+    bottom: 6px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.519);
-    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1;
 }
+
 #video-titulo
 {
-    text-align: justify;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--yt-text-primary);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 .video-outros
 {
-   color: rgb(180, 180, 180);
+   color: var(--yt-text-secondary);
+   font-size: 0.8rem;
+   line-height: 1.4;
 }
+
 .dots
 {
     background-image: url('https://cdn-icons-png.freepik.com/512/7066/7066144.png');
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     background-size: cover;
     filter: invert(1);
     position: absolute;
-    right: -5px;
+    right: 0;
     top: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
 }
+
+.Video-Recomendado:hover .dots {
+    opacity: 1;
+}
+
 .coment-nav
 {
     display: flex;
-    width: 85%;
-    height: 40px;
-    gap: 2px;
+    width: 100%;
+    height: 32px;
+    gap: 12px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 4px;
 }
+
+.coment-nav::-webkit-scrollbar {
+    display: none;
+}
+
 .coment-nav button
 {
-    flex-grow: 1;
-    background-color: #171717;
+    flex-shrink: 0;
+    background-color: var(--yt-chip-bg);
     border: none;
-    color: white;
-    font-size: 1rem;
+    color: var(--yt-text-primary);
+    font-size: 0.875rem;
+    font-family: 'Pixelify Sans';
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 0 12px;
+    height: 32px;
+    white-space: nowrap;
+    transition: background-color 0.15s;
 }
+
+.coment-nav button:hover {
+    background-color: var(--yt-button-hover);
+}
+
 #todos
 {
-    color: black;
-    background-color: white;
+    color: var(--yt-chip-active-text);
+    background-color: var(--yt-chip-active);
+}
+
+#todos:hover {
+    background-color: #d9d9d9;
 }
 
 .Video
 {
-    /*VIDEO DAQ*/
-    background-color: #121212;
-    padding-left: 2%;
-    width: 70%;
-    
+    background-color: var(--yt-bg-primary);
+    padding-left: 24px;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
+
 .Video-local{
-
-    /*Imagem de fundo*/
-    background-image: url('https://i.pinimg.com/originals/48/9f/2e/489f2ef203831fde7ac57378a16e86f4.gif');
+    background-image: url('https://media3.giphy.com/media/v7FDuR0rh63Qjwci0o/source.gif');
     background-repeat: no-repeat;
-    image-rendering: pixelated;
     background-size: cover;
-
     display: flex;
     justify-content: center;
-    height: 30%;
     width: 100%;
+    aspect-ratio: 16/9;
     position: relative;
-    background-color: rgb(40, 40, 40);
-    /*border-radius: 10px;*/
+    background-color: #000;
+    border-radius: 0;
+    overflow: hidden;
 }
+
 #controles
 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
     height: 50px;
-
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
+
+.Video-local:hover #controles {
+    opacity: 1;
+}
+
 #controles div 
 {
     display: flex;
-    gap: 10px;
+    gap: 4px;
     align-items: center;
 }
 
-
 #vid 
 {
- 
- width: 100%;
- height: 100%;
- background-size: contain;
- background-repeat: no-repeat;
-
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 #controles button{
-    height: 50px;
-    width: 50px;
+    height: 36px;
+    width: 36px;
     color: white;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     transform: scaleX(-1);
     cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#controles button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 #controles p {
     color: white;
+    font-size: 0.85rem;
+    margin-left: 8px;
 }
+
 #barra, #barraNormal {
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
-    background-color: red;
-    bottom: 50px;
+    background-color: var(--yt-accent);
+    bottom: 0;
     left: 0;
     z-index: 11;
+    transition: height 0.1s;
     animation: 60s linear infinite rolagem;
 }
+
+.Video-local:hover #barra,
+.Video-local:hover #barraNormal {
+    height: 5px;
+}
+
 #barraNormal {
     background-color: rgba(137, 137, 137, 0.712);
     animation: none;
     z-index: 10;
 }
+
 @keyframes rolagem {
     from {
         width: 0%;
@@ -203,4 +270,3 @@
         width: 100%;
     }
 }
-

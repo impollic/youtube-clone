@@ -6,7 +6,7 @@ function Nav () {
             <div className='logotype'>
                 <button className='button-operation' id='stripes'>☰</button>
                 <button className='button-operation' id='logo'></button>
-                <p className='name'>PollicTube<span>BR</span></p>
+                <p className='name'>ImPollicTube<span>BR</span></p>
             </div>
             <div className='inputsymbolaudio'>
                 <input type="text" placeholder='Pesquisar'/>

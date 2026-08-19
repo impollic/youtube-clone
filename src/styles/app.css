@@ -1,16 +1,38 @@
+:root {
+    --yt-bg-primary: #0f0f0f;
+    --yt-bg-secondary: #272727;
+    --yt-bg-tertiary: #3d3d3d;
+    --yt-bg-hover: #3d3d3d;
+    --yt-text-primary: #f1f1f1;
+    --yt-text-secondary: #aaaaaa;
+    --yt-accent: #ff0000;
+    --yt-button-bg: #272727;
+    --yt-button-hover: #3d3d3d;
+    --yt-chip-bg: #373737;
+    --yt-chip-active: #f1f1f1;
+    --yt-chip-active-text: #0f0f0f;
+    --yt-divider: #505050;
+    --yt-blue: #3ea6ff;
+    --yt-overlay: rgba(0, 0, 0, 0.6);
+}
+
 *
 {
     margin: 0;
     padding: 0;
     font-family: 'Pixelify Sans';
     box-sizing: border-box;
-    user-select: none;
 }
+
 html, body
 {
     height: 100%;
     width: 100%;
     display: flex;
-    background-color: black;
+    background-color: var(--yt-bg-primary);
+    color: var(--yt-text-primary);
 }
 
+::selection {
+    background: rgba(62, 166, 255, 0.3);
+}
