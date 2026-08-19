@@ -1,12 +1,12 @@
-# React + Vite
+# Youtube Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end clone of Youtube's main interface, built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+This project was created purely for **learning purposes**, as a way to practice and demonstrate front-end development skills — component architecture, layout replication, and interface behavior.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ This is not an official Youtube product and is not affiliated with Youtube in any way. All branding, trademarks, and assets belong to Youtube. This repository is non-commercial and exists solely for educational and portfolio purposes.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**
+- **Vite**

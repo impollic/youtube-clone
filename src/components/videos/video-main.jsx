@@ -1,6 +1,6 @@
-import './assets/corpovideo.css';
-import './assets/desc.css';
-import Comentarios from './Comentarios';
+import '../../styles/video-body.css';
+import '../../styles/video-description.css';
+import Comentarios from '../comment/comments.jsx';
 
 function Video ()
 {
@@ -53,9 +53,6 @@ function Video ()
             </div>
         </div>
         <Comentarios/>
-        
-
-
     </div>
 }
 export default Video;

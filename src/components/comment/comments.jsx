@@ -1,12 +1,12 @@
-import './assets/comentarios.css'
-import ComentarioComum from './ComentarioComum';
+import '../../styles/comments.css';
+import ComentarioComum from './comment-model.jsx';
 
 function Comentarios ()
 {
     return <div className="Comentarios">
         <h2>32.207 comentários</h2>
         <div className='meuComentario'>
-            <div class='img'></div>
+            <div className='img'></div>
             <div className='extras'>
                 <p>Adicione um comentário</p>
                 <input type="text" id='meuinput'/>

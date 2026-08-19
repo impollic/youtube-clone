@@ -1,6 +1,5 @@
-import './assets/corpovideo.css';
-import VideoComp from './VideoComp.jsx';
-
+import '../../styles/video-body.css';
+import VideoComp from './video-recommend-model.jsx';
 
 function Coments ()
 {
