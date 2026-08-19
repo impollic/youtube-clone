@@ -92,7 +92,6 @@
 
 .dots
 {
-    background-image: url('https://cdn-icons-png.freepik.com/512/7066/7066144.png');
     width: 24px;
     height: 24px;
     background-size: cover;
@@ -166,7 +165,6 @@
 }
 
 .Video-local{
-    background-image: url('https://media3.giphy.com/media/v7FDuR0rh63Qjwci0o/source.gif');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

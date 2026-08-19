@@ -74,7 +74,6 @@ input::placeholder {
 #audio
 {
     background-color: transparent;
-    background-image: url('https://img.icons8.com/?size=100&id=jkqQE2I90I8R&format=png&color=000000');
     background-size: 27.5px 27.5px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -118,7 +117,6 @@ input::placeholder {
 
 #not
 {
-    background-image: url('https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=000000');
     background-size: 27.5px 27.5px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -131,7 +129,6 @@ input::placeholder {
 
 #ca 
 {
-    background-image: url('https://yt3.googleusercontent.com/9muLpK7ohUv15em90KzpChttZD7bv7bYnRx63Cddp3uULf_Z0lUyJpT5y8v1jdQ9vkeexaDiCw=s160-c-k-c0x00ffffff-no-rj');
     background-size: cover;
 }
 
@@ -141,7 +138,6 @@ input::placeholder {
 
 #logo
 {
-    background-image: url('https://art.ngfiles.com/images/1647000/1647057_xlerr12_youtube-logo-pixel-art.png?f1613509382');
     background-size: cover;
     background-color: transparent;
 }
